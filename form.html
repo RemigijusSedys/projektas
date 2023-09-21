@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Užklausos forma</title>
+</head>
+      <fieldset>
+         <form action="">
+            <label for="name">Vardas</label>
+            <input type="text" name="name" id="name" required placeholder=" vardas">
+            <label for="email">E-paštas</label>
+            <input type="email" name="email" id="email" placeholder="elektroninis">
+            <label for="number">Numeris</label>
+            <input type="number" name="number" id="number" placeholder="numeris" required>
+            <fieldset>
+               <label for="city">Miestas
+                  <select name="miestas" id="miestas" >
+                  
+                     <option value="" disabled>---Pasirinkite miestą---</option>
+                     <option value="miestas">Kaunas</option>
+                     <option value="miestas">Vilnius</option>
+                     <option value="miestas">Klaipeda</option>
+                  </select>
+               </label>
+               <label for="gender"><select name="gender" id="gender">
+                  <option value="" disabled>---Pasirinkite Lytį---</option>
+                  <option value="vyras">Vyras</option>
+                  <option value="moteris">Moteris</option>
+                  <option value="kita">kita</option>
+               </select>
+            </label>
+            <label for="age">Amžius
+               <select name="age" id="age">Amžius
+                  <option value="" disabled>---Pasirinkite amžių---</option>
+                  <option value="jung">iki 18</option>
+                  <option value="mid">19-65</option>
+                  <option value="old">65+</option>
+               </select>
+            </label>
+            
+            </fieldset>
+            <label for="hobis">Hobis</label>
+            <label for="hobis">Read books
+               <input type="checkbox" name="hobis" id="hobis">
+            </label>
+            <label for="hobis">Begioti
+               <input type="checkbox" name="hobis" id="hobis">
+            </label>
+            <label for="hobis">Gamming
+               <input type="checkbox" name="hobis" id="hobis">
+            </label>
+            <label for="hobis">Eat
+               <input type="checkbox" name="hobis" id="hobis">
+            </label>
+            <label for="hobis">Lift weigth
+               <input type="checkbox" name="hobis" id="hobis">
+            </label>
+            <label for="send">Siuntimo būdas</label>
+            <label for="send">Kurjeris
+               <input type="radio" name="send" id="send">
+            </label>
+            <label for="send">Paštomatas
+               <input type="radio" name="send" id="send">
+            </label>
+            <label for="send">Atvykimas
+               <input type="radio" name="send" id="send">
+            </label>
+            <label for="send">Tiesiogiai
+               <input type="radio" name="send" id="send">
+            </label>
+            <label for="send">Ereliu
+               <input type="radio" name="send" id="send">
+            </label>
+            <label for="">Papaildoma informacija:</label>
+            <textarea name="more info" id="" cols="20" rows="10" placeholder="Papildoma informacija"></textarea>
+         </form>
+         <button  type="submit" > <a href="./index.html">Patvirtinti</a></button>
+      </fieldset>
+
+   </body>
+   </html>
+</body>
+</html>
