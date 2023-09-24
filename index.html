@@ -8,59 +8,86 @@
 <body>
    <header>
       <div>
-         <a href="./index.html"><img src="./pictures/logo.png" alt="logo"></a>
+         <a href="#"><img src="./pictures/logo.png" alt="logo"></a>
       </div>
       <nav>
          <ul>
             <li><a href="#">Pradinis</a></li>
-            <li><a href="#">Kelionių pasiūlymai</a></li>
-            <li><a href="#">Autouoma</a></li>
-            <li><a href="#">Patarimai keliaujantiems</a></li>
-            <li><a href="#">Kelionių žurnalas</a></li>
-            <li><a href="#">Galerija</a></li>
-            <li><a href="#">Kontaktai</a></li>
+            <ul>
+               <li><a href="#kelioniu-pasiulymai">Kelionių pasiūlymai</a></li>
+               <li><a href="#autonuoma">Auto nuoma</a></li>
+               <li><a href="#patarimai-keliaujantiems">Patarimai keliaujantiems</a></li>
+               <li><a href="#kelioniu-zurnalas">Kelionių žurnalas</a></li>
+            </ul>
+            
+            <li><a href="./form.html">Forma</a></li>
+            <li><a href="./personal-blog.html">Galerija</a></li>
+            <li><a href="#kontaktai">Kontaktai</a></li>
             <li><a href="./login.html">Prisijungti</a></li>
-
          </ul>
       </nav>
    </header>
 
    <main>
-      <div>
+      <section>
          <h1>Pagrindinis puslapis</h1>
          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis iusto totam expedita. Ut esse ea cum fugit suscipit vero veniam quo debitis recusandae mollitia laborum, praesentium dolore dolorum asperiores unde pariatur. Illo ex, quasi alias reprehenderit impedit sunt consequatur inventore!</p>
-      </div>
+      
       <video controls width="800">
          <source src="./pictures/Madeira.mp4" />
       </video>
-      <div>
+      </section>
+      <section id="kelioniu-pasiulymai">
          <h2>Kelionių pasiūlymai</h2>
 
-         <img src="" alt="keliones-nuotrauka">
-         <h3>Madeira</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
-         </p>
-         <button type="button"><a href="index.html">550 &euro;</a></button>
-         
-         <img src="" alt="keliones-nuotrauka">
-         <h3>Ispanija</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
-         </p>
-         <button type="button"><a href="index.html">650 &euro;</a></button>
-         
-         <img src="" alt="keliones-nuotrauka">
-         <h3>Madagaskaras</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
-         </p>
-         <button type="button"><a href="index.html">850 &euro;</a></button>
-         
-         <img src="" alt="keliones-nuotrauka">
-         <h3>egiptas</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
-         </p>
-         <button type="button"><a href="index.html">450 &euro;</a></button>
-      </div>
-         
+         <figure>
+            <img src="./pictures/kelioniu-pasiulymo/madeira.webp" width="250px" alt="keliones-nuotrauka">
+            <figcaption>
+               <h3>Madeira</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
+               </p>
+            </figcaption>
+            <button type="button"><a href="index.html">550 &euro;</a></button>
+         </figure>
+         <figure>
+            <img src="./pictures/kelioniu-pasiulymo/spain.webp" width="250px" alt="keliones-nuotrauka">
+            <figcaption>
+               <h3>Ispanija</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
+               </p>
+            </figcaption>
+            <button type="button"><a href="index.html">650 &euro;</a></button>
+         </figure>
+         <figure>
+            <img src="./pictures/kelioniu-pasiulymo/madagaskaras.jpg" width="250px" alt="keliones-nuotrauka">
+            <figcaption>
+               <h3>Madagaskaras</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
+               </p>
+            </figcaption>
+            <button type="button"><a href="index.html">850 &euro;</a></button>
+         </figure>
+         <figure>
+            <img src="./pictures/kelioniu-pasiulymo/egiptas.jpg" width="250px" alt="keliones-nuotrauka">
+            <figcaption>
+               <h3>Egiptas</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
+               </p>
+            </figcaption>
+            <button type="button"><a href="index.html">450 &euro;</a></button>
+         </figure>
+         <figure>
+            <img src="./pictures/kelioniu-pasiulymo/alpes.jpg " width="250px" alt="keliones-nuotrauka">
+            <figcaption>
+               <h3>Alpes</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut error placeat. Doloremque iure qui laborum .
+               </p>
+            </figcaption>
+            <button type="button"><a href="index.html">800 &euro;</a></button>
+         </figure>
+
+      </section>
+      <section id="patarimai-keliaujantiems">
          <h2>Patarimai ir rekomendacijos keliaujantiems</h2>
          <ol>
             <li> Lietuva
@@ -90,11 +117,11 @@
                </ul>
             </li>
          </ol>
-      </div>
-      <div>
+      </section>
+      <section id="autonuoma">
          <h2>Automobilio nuoma</h2>
          <table border="1">
-            <tr">
+            <tr>
                <th>Automobilis</th>
                <th>Markė</th>
                <th>Sąnaudos</th>
@@ -104,7 +131,7 @@
                <th>25+d.</th>
             </tr>
             <tr style="width: 200px;">
-               <td><img src="./pictures/mazda.jpg" width="250px" alt="mazda"></td>
+               <td><img src="./pictures/automobiliai/mazda.jpg" width="250px" alt="mazda"></td>
                <td>Mazda</td>
                <td>5litrai</td>
                <td>20&euro;</td>
@@ -113,7 +140,7 @@
                <td>200&euro;</td>
             </tr>
             <tr style="width: 200px;">
-               <td><img src="./pictures/toyota.jpg" width="250px" alt="toyota"></td>
+               <td><img src="./pictures/automobiliai/toyota.jpg" width="250px" alt="toyota"></td>
                <td>Toyota</td>
                <td>2litrai</td>
                <td>25&euro;</td>
@@ -121,7 +148,7 @@
                <td>85&euro;</td>
                <td>210&euro;</td>
             </tr><tr style="width: 200px;">
-               <td><img src="./pictures/bmw.jpg" width="250px" alt="bmw"></td>
+               <td><img src="./pictures/automobiliai/bmw.jpg" width="250px" alt="bmw"></td>
                <td>BMW</td>
                <td>8litrai</td>
                <td>30&euro;</td>
@@ -129,7 +156,7 @@
                <td>100&euro;</td>
                <td>230&euro;</td>
             </tr><tr style="width: 200px;">
-               <td><img src="./pictures/buzz.jpeg" width="250px" alt="buzz"></td>
+               <td><img src="./pictures/automobiliai/buzz.jpeg" width="250px" alt="buzz"></td>
                <td>VW buzz</td>
                <td>500km</td>
                <td>35&euro;</td>
@@ -137,7 +164,7 @@
                <td>105&euro;</td>
                <td>220&euro;</td>
             </tr><tr style="width: 200px;">
-               <td><img src="./pictures/tesla.jpeg" width="250px" alt="tesla"></td>
+               <td><img src="./pictures/automobiliai/tesla.jpeg" width="250px" alt="tesla"></td>
                <td>Tesla</td>
                <td>400km</td>
                <td>50&euro;</td>
@@ -146,32 +173,46 @@
                <td>250&euro;</td>
             </tr>
          </table>
-      </div>
-      <div>
+      </section>
+      <section id="kelioniu-zurnalas">
          <h2>Kelionių žurnalas</h2>
+            <!-- 1 -->
          <h3>lorem3</h3>
-         <p> <a href="https://kitm.lt" target="_blank">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio fuga perspiciatis mollitia necessitatibus dolorum in
+         <p> Lorem ipsum dolor sit amet. onsectetur adipisicing elit. Optio fuga perspiciatis mollitia necessitatibus dolorum in
          excepturi <em>voluptatem eveniet provident magni assumenda, ex iste consequuntur consequatur nulla aperiam quos</em>  esse
          inventore? Totam, dolorem. Perspiciatis numquam et reiciendis,<cite>veniam voluptate nulla inventore distinctio possimus
-            ut</cite> fugit neque, quis architecto, a cupiditate accusantium.</a> </p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ipsam perspiciatis eos blanditiis veniam dicta iusto assumenda laudantium sunt iure, placeat <strong>voluptates incidunt veritatis</strong> quos, molestias temporibus rerum quasi ad?</p>
+            ut</cite> fugit neque, quis architecto, a cupiditate accusantium. </p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ipsam perspiciatis eos blanditiis veniam dicta iusto assumenda laudantium sunt iure, placeat <strong>voluptates incidunt veritatis</strong> quos, molestias temporibus rerum quasi ad? <a href="https://google.lt" target="_blank">Lorem ipsum dolor</a></p>
+            <!-- 2 -->
          <h3>Lorem ipsum dolor sit.</h3>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, voluptatem culpa, minima quia alias natus aut ipsam in repellat animi reprehenderit corporis aliquam. Quisquam accusantium iste pariatur <strong>perspiciatis impedit rerum? Maiores necessitatibus libero</strong> cumque aut reprehenderit  repudiandae, nobis <cite>laborum corrupti. Magni praesentium odit maxime nulla, fugiat</cite>  ex nemo ea? Velit!</p>
-         <p> <a href="https://google.lt" target="_blank">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam eum quas voluptatibus quam laborum adipisci? Eos fuga
-         libero nemo quidem.</a> 
+         <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, fuga. sit, amet consectetur adipisicing elit. Totam eum quas voluptatibus quam laborum adipisci? Eos fuga
+         libero nemo quidem. <a href="https://google.lt" target="_blank">Lorem ipsum dolor</a>
          </p>
+            <!-- 3 -->
          <h3>Lorem, ipsum dolor.</h3>
          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus repellat laborum sed dolore! Rerum aliquid quibusdam nesciunt cum, unde explicabo expedita dolor modi temporibus labore ratione, nobis vel quos nisi!</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi eum consequatur ea maiores id eaque, aut ut illum. Neque cupiditate at in rem laudantium alias sed quas, dolorum non.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi eum consequatur ea maiores id eaque, aut ut illum. Neque cupiditate at in rem laudantium alias sed quas, dolorum non.<a href="https://google.lt" target="_blank">Lorem ipsum dolor</a></p>
+            <!-- 4 -->
          <h3>Lorem ipsum dolor sit.</h3>
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sequi earum, ea officiis a pariatur voluptatum modi. Totam fugit, nam suscipit maiores repudiandae accusantium expedita esse, ab sint omnis optio?</p>
+         <p><a href="https://google.lt" target="_blank">Lorem ipsum dolor</a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sequi earum, ea officiis a pariatur voluptatum modi. Totam fugit, nam suscipit maiores repudiandae accusantium expedita esse, ab sint omnis optio?</p>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus, excepturi laborum molestias, repellat sunt explicabo quisquam voluptatum consequuntur recusandae, accusantium officiis? Eius quos libero vel dolor nesciunt possimus ipsum?</p>
-      </div>
+            <!-- 5 -->
+         <h3>Lorem ipsum dolor sit.</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, voluptatem culpa, minima quia alias natus aut ipsamin repellat animi reprehenderit corporis aliquam. Quisquam accusantium iste pariatur <strong>perspiciatis impedit rerum? Maiores necessitatibus libero</strong> cumque aut reprehenderit repudiandae, nobis <cite>laborum corrupti. Magni praesentium odit maxime nulla, fugiat</cite> ex nemo ea? Velit!</p>
+         <p> sit, amet consectetur adipisicing elit. Totam eum Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, laborum! quas voluptatibus quam laborum adipisci? Eos fuga libero nemo quidem. <a href="https://google.lt" target="_blank">Lorem ipsum dolor</a>
+         </p>
+            <!-- 6 -->
+         <h3>Lorem ipsum dolor sit.</h3>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, voluptatem culpa, minima quia alias natus aut ipsamin repellat animi reprehenderit corporis aliquam. Quisquam accusantium iste pariatur <strong>perspiciatis impeditrerum? Maiores necessitatibus libero</strong> cumque aut reprehenderit repudiandae, nobis <cite>laborum corrupti.Magni praesentium odit maxime nulla, fugiat</cite> ex nemo ea? Velit!</p>
+         <p> sit, amet consectetur adipisicing elit. Totam eum quas voluptatibus quam laborum adipisci? Eos fuga libero nemo quidem. <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nisi sint accusantium iure quidem ipsum odio consectetur quaerat. Pariatur, omnis?<a href="https://google.lt" target="_blank">Lorem ipsum dolor</a></em>
+         </p>
+      </section>
       
    </main>
 
    <footer>
-      <div>
+      <section id="kontaktai">
          <h3>Kontaktai</h3>
          <address>
 
@@ -182,14 +223,14 @@
 
          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9177.365637528588!2d23.908292532607625!3d54.896929666281004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKaunas%20Information%20Technology%20School!5e0!3m2!1sen!2slt!4v1695290672996!5m2!1sen!2slt"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div>
+      </section>
+      <section>
          <p>
             Copyright &copy; 2023 by some commpany . All Rights Reserved.
          </p>
-      </div>
+      </section>
    </footer>
 </body>
 </html>

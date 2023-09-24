@@ -6,19 +6,57 @@
    <title>Log in form</title>
 </head>
 <body>
-   <h2>Login</h2>
-   <fieldset>
-      <form action="./personal-blog.html">
-         <label for="name">Vardas</label>
-         <input type="text" name="name" id="name" placeholder="vardas" required>
-         <label for="email">E-mail</label>
-         <input type="email" name="email" id="email" placeholder="elektroninis paštas" required>
-         <label for="pass">Password</label>
-         <input type="pass" name="pass" id="pass" placeholder="pass" required>
-         <button type="submit"></a>Submit</button>
-      </form>
+   <header>
+      <div>
+         <a href="./index.html"><img src="./pictures/logo.png" alt="logo"></a>
+      </div>
+      <nav>
+         <ul>
+            <li><a href="./index.html">Pradinis</a></li>
+            <li><a href="./form.html">Forma</a></li>
+            <li><a href="./personal-blog.html">Galerija</a></li>
+            <li><a href="#kontaktai">Kontaktai</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section>
+      <h2>Login</h2>
+      <fieldset>
+         <form action="./personal-blog.html">
+            <label for="name">Vardas</label>
+            <input type="text" name="name" id="name" placeholder="vardas" required pattern="[a-zA-Z0-9-]">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="elektroninis paštas" required>
+            <label for="pass">Password</label>
+            <input type="pass" name="pass" id="pass" placeholder="pass" required>
+            <label for="number">Numeris</label>
+            
+            <button type="submit"><a href="./personal-blog.html"></a>Submit</button>
+         </form>
       
-   </fieldset>
+      </fieldset>
+   </section>
+   <footer>
+      <section id="kontaktai">
+         <h3>Kontaktai</h3>
+         <address>
+   
+            <a href="mailto:jim@rock.com">&#9993 verslas@kitm.com</a>
+            <a href="tel:+6516161">&#x260F; (3705) 555-2368</a>
+            <a href="#">&#x261B; praeities g.</a>
+         </address>
+   
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9177.365637528588!2d23.908292532607625!3d54.896929666281004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKaunas%20Information%20Technology%20School!5e0!3m2!1sen!2slt!4v1695290672996!5m2!1sen!2slt"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section>
+         <p>
+            Copyright &copy; 2023 by some commpany . All Rights Reserved.
+         </p>
+      </section>
+   </footer>
    
    
 </body>
